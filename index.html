@@ -174,16 +174,13 @@
       gap: 10px
     }
 
-    .logo-mark {
-      width: 30px;
-      height: 30px;
-      border: 2px solid var(--accent);
-      display: grid;
-      place-items: center;
-      font-size: .7rem;
-      color: var(--accent);
-      font-family: var(--mono);
-      font-weight: 500
+    .logo img {
+      display: block;
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: var(--surface);
     }
 
     .nav ul {
@@ -1182,7 +1179,7 @@
   <script>document.documentElement.lang = "tr"</script>
   <header class="nav" lang="tr">
     <div class="wrap">
-      <a class="logo" href="img/logo.jpg"><span class="logo-mark">SE</span>SEIS</a>
+      <a class="logo" href="#top" aria-label="SEIS ana sayfa"><img src="img/logo.png" alt="">SEIS</a>
       <ul>
         <li><a href="#hakkimizda">Hakkımızda</a></li>
         <li><a href="#gecmis">Geçmiş</a></li>
